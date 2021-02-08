@@ -1,0 +1,75 @@
+<!-- CUERPO DEL EJERCICIO -->
+<main>
+  <form id="contactForm" name="sentMessage" novalidate="novalidate" enctype="multipart/form-data" method="post"
+    action="/objetos/guardar" style="display: grid;">
+    <div class="row align-items-stretch mb-5">
+      <div class="col-md-6">
+        <div class="form-group">
+          <input class="form-control" id="validationCustom01" name="uNombre" value="{{uNombre}}" type="text"
+            placeholder="Nombre y Apellido *" required="required"
+            data-validation-required-message="Por favor ingrese nombre." />
+          <p class="help-block text-danger"></p>
+        </div>
+        <div class="form-group mb-md-0">
+          <input class="form-control" id="validationCustom03" name="uTelefono" value="{{uTelefono}}" type="tel" placeholder="teléfono *"
+            required="required" data-validation-required-message="Por favor ingrese numero de teléfono." />
+          <p class="help-block text-danger"></p>
+        </div>
+        <h2>Datos del Objeto</h2>
+        <div class="form-group">
+          <label>Tipo de Objeto</label>
+          <select class="form-control" id="validationCustom02" name="oTipo" value="{{oTipo}}" type="text" placeholder="Tipo de Objeto *"
+            required="required" data-validation-required-message="Por favor ingrese el tipo de objeto.">
+            <option>Ropa</option>
+            <option>Complementos</option>
+            <option>Juguete</option>
+            <option>Perfume</option>
+            <option>Dinero</option>
+            <option>billeteras/Carteras</option>
+          </select>
+          <p class="help-block text-danger"></p>
+        </div>
+        <div class="form-group form-group-textarea mb-md-0">
+          <textarea class="form-control" id="validationCustom04" name="oDescripcion" value="{{oDescripcion}}" placeholder="Descripción *"
+            required="required" data-validation-required-message="Por favor describa el objeto."></textarea>
+          <p class="help-block text-danger"></p>
+        </div>
+        <div class="form-group">
+          <input class="form-control" id="validationCustom03" type="text" name="oLugar" value="{{oLugar}}" 
+            placeholder="Lugar de Localización *" required="required"
+            data-validation-required-message="Por favor ingrese el lugar localizo el objeto." />
+          <p class="help-block text-danger"></p>
+        </div>
+        <div class="form-group">
+          <input class="form-control" id="validationCustom06" type="date" name="oDate" value="{{oDate}}"  placeholder="Dia Localizado *"
+            required="required" data-validation-required-message="Por favor ingrese el Día que localizo el objeto." />
+          <p class="help-block text-danger"></p>
+        </div>
+        <div class="form-group">
+          <input class="form-control" accept="image/png,image/jpeg" type="file" name="oFoto" value="{{oFoto}}"  id="foto">
+        </div>
+      </div>
+      <div class="text-center">
+        <div id="success"></div>
+        <button class="btn btn-primary btn-xl text-uppercase" id="sendMessageButton" type="submit">Registrar</button>
+      </div>
+  </form>
+  <div class="col-12"></div>
+  </div>
+  {{#if errores}}
+  <div class="row">
+    <div class="col-12">
+      {{#each errores}}
+      <p>{{error}}</p>
+      {{/each}}
+    </div>
+  </div>
+  {{else}}
+  <div class="row">
+    <div class="col-12">
+      <p>{{message}}</p>
+    </div>
+  </div>
+  {{/if}}
+</main>
+{{ session.user }}

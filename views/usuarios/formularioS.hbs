@@ -1,0 +1,31 @@
+<!-- CUERPO DEL EJERCICIO -->
+<main>
+    <form id="contactForm" novalidate="novalidate" enctype="multipart/form-data" method="post"
+        action="/usuarios/sesion" style="display:grid">
+        <div class="row align-items-stretch mb-5">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <input class="form-control" id="validationCustom01" name="uEmail" value="{{body.uEmail}}" type="text" placeholder="Email *"
+                        required="required" data-validation-required-message="Por favor ingrese Email." />
+                    <p class="help-block text-danger"></p>
+                </div>
+                <div class="form-group mb-md-0">
+                    <input class="form-control" id="validationCustom03" name="uPassword" type="password"
+                        placeholder="Password *" required="required"
+                        data-validation-required-message="Por favor su Password." />
+                    <p class="help-block text-danger"></p>
+                </div>
+                <div class="text-center">
+                    <div id="success"></div>
+                    <button class="btn btn-primary btn-xl text-uppercase" value="Guardar" id="sendMessageButton"
+                        type="submit">Entrando</button>
+                </div>
+            </div>
+        </div>
+    </form>
+     <div class="row">
+      <div class="col-12">
+        <p>{{mensaje}}</p>
+      </div>
+    </div>
+</main>

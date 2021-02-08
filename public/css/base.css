@@ -1,0 +1,67 @@
+body {
+  background-color: #fff;
+  background-image: url("/img/objetos/fondo.jpg");
+  width: 100%;
+  z-index: 9999;
+}
+
+header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 9999;
+}
+
+header nav {
+  background-color: #18bbe4;
+  border-bottom: 5px solid #615306;
+}
+
+header a, header a:hover {
+  color: #040553;
+  margin-left: 10px;
+}
+
+main {
+  margin-top: 90px;
+}
+
+main .container {
+  background: #fff;
+  border-radius: 10px;
+}
+
+main .container .row {
+  min-height: 16px;
+}
+
+main .container .row div[class^='col-'] {
+  width: 100%;
+}
+
+main .container .row div[class^='col-'] .btn-primary {
+  float: right;
+  margin: 10px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  z-index: 0;
+  background: black;
+}
+
+.listado {
+  border-radius: 10px;
+  border-color: #040553;
+  border: ridge;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.denegado {
+  width: 155px;
+  border-radius: 55%;
+}

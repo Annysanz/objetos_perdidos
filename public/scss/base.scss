@@ -1,0 +1,67 @@
+
+
+body{
+    background-color: #fff;
+    background-image: url("/img/objetos/fondo.jpg");
+    width: 100%;
+    z-index: 9999;
+}
+
+header {
+    position: fixed;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: 9999;
+    nav{
+        background-color: rgb(24, 187, 228);
+        border-bottom:5px solid #615306;
+    }    
+    a,a:hover{
+        color:rgb(4, 5, 83);
+        margin-left:10px;
+    }
+}
+main{
+    margin-top: 90px;
+    .container{
+        background: #fff;
+
+        border-radius: 10px;
+        .row{
+            min-height: 16px;
+            div[class^='col-']{
+                width: 100%;
+                .btn-primary{
+                    float:right;
+                    margin:10px;
+                }
+         
+           }
+        }
+
+    }
+}
+footer{
+    position:fixed;
+    bottom:0px;
+    width:100%;
+    z-index: 0;
+    background:black;
+    
+}
+
+
+.listado{
+    border-radius: 10px;
+    border-color: rgb(4, 5, 83);
+    border: ridge;
+    margin-top: 20px;
+    margin-left: 10px;
+    
+}
+
+.denegado{
+    width: 155px;
+    border-radius: 55%;
+}
