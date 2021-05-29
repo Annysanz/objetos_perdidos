@@ -14,15 +14,14 @@ mailer.send = async function send(destinatario) {
   })
 
   // send mail with defined transport object
-
-  //mailer.getTemplate(template)
-  //  .then(datos=>
+  // mailer.getTemplate(template)
+  //   .then(datos=>
       let info = await transporter.sendMail({
             from: '"Fred Foo" <foo@example.com>', // dirección del remitente
             to: destinatario, // lista de receptores
             subject: "Registro usuario nuevo", // Línea de asunto
             text: "Estos son sus datos", // cuerpo de texto sin formato
-            html: "<h1>activar tu cuenta</h1>"
+            html: "<h1>Puedes activar tu cuenta</h1>"
           })
   //  )
   console.log(info)

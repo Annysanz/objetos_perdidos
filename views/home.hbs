@@ -1,27 +1,20 @@
 <main>
-  <div class="container">
-    <div class="row">
-      <div class="col-12 resultado justify-content-center align-items-center">
-          <h1>Home</h1>
+  <div class="container resultado">
+    <div class="row resultado">
+      <div class="col-12  justify-content-center align-items-center">
+        <h1>Objetos Perdidos</h1>
       </div>
-      <div class="col-12 resultado justify-content-center align-items-center">
-          <p>En esta versión tenemos:</p>
-          <ul>
-              <li>Servidor express (puerto 8080)</li>
-              <li>Motor de plantillas handlebars</li>
-              <li>Upload de archivos</li>
-              <li>SCSS y Bootstrap</li>
-              <li>Patrón de diseño MVC</li>
-              <li>Conexión con bd MongoDB 
-                  (Acordarse de cambiar la URL a vuestra conexión en el archivo conexion.js)
-                  <p>Si NO tenéis la autenticación activada en MONGO, la conexión será algo así:</p>
-                  <p>mongodb://localhost:27017/objetosPerdidos (cuidado las mays/mins)</p>
-              </li>
-              <li>Validación en modelo y en base de datos</li>              
-              <li>Encriptación de password con bcrypt</li>
-              <li>Envíos de e-mail con nodemailer</li>
-          </ul>
-      </div>      
+      <div class="col-6 justify-content-center align-items-center">
+        <p>Aquí podras registrar o buscar tus objetos:</p>
+        <ul>
+          <li>Regitrate para ingresar un objeto perdido</li>
+          <li>Inicia Sesión para regitrar los objetos encontrados</li>
+          <li>Busca un Objeto que se te halla perdido</li>
+        </ul>
+      </div>
+      <div class="col-6">
+        <img class=" obj" src="/img/objetos/home.JPG" alt="">
+      </div>
     </div>
   </div>
 </main>

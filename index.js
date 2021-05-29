@@ -9,7 +9,6 @@ const fileUpload = require('express-fileupload')
 const session = require('express-session')
 const bodyParser = require('body-parser')
 
-
 //configuración del motor de plantillas handlebars
 app.engine('.hbs', exphbs({
     extname: '.hbs'

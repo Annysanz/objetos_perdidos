@@ -15,7 +15,6 @@ const schemaUsuario = new Schema({
     activo: { type: Boolean, default: false }
 })
 
-
 class Usuario {
 
     get errores() {
@@ -39,8 +38,6 @@ schemaUsuario.pre('save', function (next) {
             next()
         })
 })
-
-
 
 // schemaUsuario.plugin(beautifyUnique)
 schemaUsuario.loadClass(Usuario)
