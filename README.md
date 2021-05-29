@@ -6,7 +6,7 @@
 ## Welcome! 👋
 # Fullstack Developer - Coding Bootcamp
 
-# nodejs_mongodb
+# handlebars_nodejs_mongodb
 
 ## Project setup
 ```
