@@ -1,7 +1,7 @@
 <h1>Objetos Perdidos</h1>
-  <p align="center">
+  <div align="center">
     <img src="/myFolder/principal.png" width="50%" height="350px" title="hover text">
-  </p>
+  </div>
 
 ## Welcome! 👋
 # Fullstack Developer - Coding Bootcamp
