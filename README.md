@@ -1,5 +1,5 @@
-<h1>Objetos Perdidos</h1>
-  <div align="center">
+<h1  text-align="center">Objetos Perdidos</h1>
+  <div>
     <img src="/myFolder/principal.png" width="50%" height="350px" title="hover text">
   </div>
 
